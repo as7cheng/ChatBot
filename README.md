@@ -2,7 +2,7 @@ A Web-version Concierge ChatBot deployed on Amazon AWS.
 
 URL: http://diningrobot.s3-website-us-east-1.amazonaws.com/
 
-Tech-stack:
+**Tech-stack:**
 1. Languages: HTML/CSS, JS, Python.
 2. Services: S3, API Gateway, Lambda, SQS, LEX, DynamoDB, Elasticsearch, SNS, SES, CloudWatch.
 3. API: Yelp Fusion.
@@ -11,8 +11,9 @@ Tech-stack:
 It is a chatbot that gives users restaurant suggestions based on users' input,  supports users to type in some information e.g. cuisine type, location, number of people and date, etc., and returns users an email or text-message contains some restaurant suggestions with details.
 NOTE: Since the limited space of AWS free-tier, currently it only has about 5,000 restaurants' information located around NYC. Also, due to the unreliability of SNS, I chose the SES as a demo.
 
-Important: Remember to create exexution roles and attached neccessary policies for each part through IAM
-Development process:
+**Important**: Remember to create exexution roles and attached neccessary policies for each part through IAM
+
+**Development process:**
 1. Deploy the frontend part(assets) on S3
 2. Import aics-swagger.yaml into API Gateway, generate new SDK and replace the it with the old version in assets. Remember to enable CORS for your API before doing so.
 3. Create Lambda function LF0 to connect API Gateway. It works as:
