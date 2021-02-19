@@ -4,9 +4,7 @@ URL: http://diningrobot.s3-website-us-east-1.amazonaws.com/
 
 Tech-stack:
 Languages: HTML/CSS, JS, Python
-
 Platform: Amazon AWS
-
 Services: S3, API Gateway, Lambda, SQS, LEX, DynamoDB, Elasticsearch, SNS, SES, CloudWatch
 API: Yelp Fusion
 WebUI: Provided by course.
